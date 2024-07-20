@@ -1,7 +1,7 @@
 for _,v in pairs(game.workspace.Collectibles:GetChildren()) do
-if string.find(v.Name,"") then
-v:Destroy()
-end
+	if string.find(v.Name,"") then
+		v:Destroy()
+	end
 end 
 
 local tuoidz = "Sunflower Field"
@@ -1211,7 +1211,7 @@ Dropweapon.BorderSizePixel = 0
 Dropweapon.Position = UDim2.new(0.261000007, 0, 0.219999999, 0)
 Dropweapon.Size = UDim2.new(0, 120, 0, 20)
 Dropweapon.Font = Enum.Font.GothamBold
-Dropweapon.Text = "Drop Weapon"
+Dropweapon.Text = "Auto Farm Snowflake"
 Dropweapon.TextColor3 = Color3.new(1, 1, 1)
 Dropweapon.TextSize = 14
 
@@ -1495,15 +1495,15 @@ local repss = 0
 local xoay = 0 
 
 spawn(function()
-for i=1,150 do wait(.05)
-      xoay = xoay - 10
-      Loadingimage.Rotation = xoay
-end
+	for i=1,150 do wait(.05)
+		xoay = xoay - 10
+		Loadingimage.Rotation = xoay
+	end
 end)
 
 for c=1,10 do wait(.3)
-      Loadingtext.Text = "Loading Place"..string.rep('.',repss%3+1)
-      repss = repss + 1
+	Loadingtext.Text = "Loading Place"..string.rep('.',repss%3+1)
+	repss = repss + 1
 end
 
 Loadingtext.Text = "Loading Place: Success"
@@ -1512,546 +1512,546 @@ wait(1)
 local repss = 0
 
 for d=1,10 do wait(.3)
-      Loadingtext.Text = "Loading UI"..string.rep('.',repss%3+1)
-      repss = repss + 1
+	Loadingtext.Text = "Loading UI"..string.rep('.',repss%3+1)
+	repss = repss + 1
 end
 
 if game.PlaceId == 1537690962 or game.PlaceId == 4079902982 then
-Loadingtext.Text = "Loading UI: Success"
-if syn then 
-LoadingFrame:TweenPosition(UDim2.new(0.410933673, 0, -0.7, 0)) 
-wait(1)
-DarkCyberLoadingGUI:Destroy()
-SynapShitPage.Visible = true
-wait(2)
-SynapShitPage:TweenPosition(UDim2.new(0.416354954, 0, -0.717690426, 0))
-wait(1)
-DarkCyberSynapshitGUI:Destroy()
-wait(1)
-MiniPage:TweenPosition(UDim2.new(0.361979187, 0, 0.34183538, 0))  --0.361979187, 0, 0.34183538, 0
-else
-LoadingFrame:TweenPosition(UDim2.new(0.410933673, 0, -0.7, 0)) 
-wait(1)
-DarkCyberLoadingGUI:Destroy()
-MiniPage:TweenPosition(UDim2.new(0.361979187, 0, 0.34183538, 0))  --0.361979187, 0, 0.34183538, 0 
-end
+	Loadingtext.Text = "Loading UI: Success"
+	if syn then 
+		LoadingFrame:TweenPosition(UDim2.new(0.410933673, 0, -0.7, 0)) 
+		wait(1)
+		DarkCyberLoadingGUI:Destroy()
+		SynapShitPage.Visible = true
+		wait(2)
+		SynapShitPage:TweenPosition(UDim2.new(0.416354954, 0, -0.717690426, 0))
+		wait(1)
+		DarkCyberSynapshitGUI:Destroy()
+		wait(1)
+		MiniPage:TweenPosition(UDim2.new(0.361979187, 0, 0.34183538, 0))  --0.361979187, 0, 0.34183538, 0
+	else
+		LoadingFrame:TweenPosition(UDim2.new(0.410933673, 0, -0.7, 0)) 
+		wait(1)
+		DarkCyberLoadingGUI:Destroy()
+		MiniPage:TweenPosition(UDim2.new(0.361979187, 0, 0.34183538, 0))  --0.361979187, 0, 0.34183538, 0 
+	end
 end
 
 Copylinkdiscord.MouseButton1Down:Connect(function()
-setclipboard("discord.gg/GT6uXF2")
+	setclipboard("discord.gg/GT6uXF2")
 end)
 
 HomeButton.MouseButton1Down:Connect(function()
-HomeButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
-FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-HomePage.Visible = true
-FarmingPage.Visible = false
-WaypointPage.Visible = false
-ExtraPage.Visible = false
-SettingPage.Visible = false
+	HomeButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
+	FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	HomePage.Visible = true
+	FarmingPage.Visible = false
+	WaypointPage.Visible = false
+	ExtraPage.Visible = false
+	SettingPage.Visible = false
 end)
 
 FarmingButton.MouseButton1Down:Connect(function()
-HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-FarmingButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
-WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-HomePage.Visible = false
-FarmingPage.Visible = true
-WaypointPage.Visible = false
-ExtraPage.Visible = false
-SettingPage.Visible = false
+	HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	FarmingButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
+	WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	HomePage.Visible = false
+	FarmingPage.Visible = true
+	WaypointPage.Visible = false
+	ExtraPage.Visible = false
+	SettingPage.Visible = false
 end)
 
 WaypointsButton.MouseButton1Down:Connect(function()
-HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-WaypointsButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
-ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)  
-HomePage.Visible = false
-FarmingPage.Visible = false
-WaypointPage.Visible = true
-ExtraPage.Visible = false
-SettingPage.Visible = false
+	HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	WaypointsButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
+	ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)  
+	HomePage.Visible = false
+	FarmingPage.Visible = false
+	WaypointPage.Visible = true
+	ExtraPage.Visible = false
+	SettingPage.Visible = false
 end)
 
 
 local UserInputService = game:GetService("UserInputService")
- 
+
 local function onInputEnded(inputObject, gameProcessedEvent)
-    -- First check if the 'gameProcessedEvent' is true
-    -- This indicates that another script had already processed the input, so this one can be ignored
-    if gameProcessedEvent then return end
-    -- Next, check that the input was a keyboard event
-    if inputObject.UserInputType == Enum.UserInputType.Keyboard then
-        if inputObject.KeyCode == Enum.KeyCode.Home then --Nút home đóng m? ui
-            if MiniPage.Visible == true then
-            MiniPage.Visible =  false
-        elseif MiniPage.Visible == false then
-            MiniPage.Visible = true
-        end
-    end
-end
+	-- First check if the 'gameProcessedEvent' is true
+	-- This indicates that another script had already processed the input, so this one can be ignored
+	if gameProcessedEvent then return end
+	-- Next, check that the input was a keyboard event
+	if inputObject.UserInputType == Enum.UserInputType.Keyboard then
+		if inputObject.KeyCode == Enum.KeyCode.Home then --Nút home đóng m? ui
+			if MiniPage.Visible == true then
+				MiniPage.Visible =  false
+			elseif MiniPage.Visible == false then
+				MiniPage.Visible = true
+			end
+		end
+	end
 end
 UserInputService.InputEnded:Connect(onInputEnded)
 
 
 ExtrasButton.MouseButton1Down:Connect(function()
-HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-ExtrasButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
-SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-HomePage.Visible = false
-FarmingPage.Visible = false
-WaypointPage.Visible = false
-ExtraPage.Visible = true
-SettingPage.Visible = false
+	HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	ExtrasButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
+	SettingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	HomePage.Visible = false
+	FarmingPage.Visible = false
+	WaypointPage.Visible = false
+	ExtraPage.Visible = true
+	SettingPage.Visible = false
 end)
 
 SettingButton.MouseButton1Down:Connect(function()
-HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
-SettingButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
-HomePage.Visible = false
-FarmingPage.Visible = false
-WaypointPage.Visible = false
-ExtraPage.Visible = false
-SettingPage.Visible = true
+	HomeButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	FarmingButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	WaypointsButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	ExtrasButton.BackgroundColor3 = Color3.new(0.34902, 0.32549, 1)
+	SettingButton.BackgroundColor3 = Color3.new(0.345098, 0.14902, 1)
+	HomePage.Visible = false
+	FarmingPage.Visible = false
+	WaypointPage.Visible = false
+	ExtraPage.Visible = false
+	SettingPage.Visible = true
 end)
 
 Destroy.MouseButton1Down:Connect(function()
-MiniPage:TweenPosition(UDim2.new(0.361979187, 0, -0.7, 0))
-wait(1)
-DarkCyberMainGUI:Destroy()
+	MiniPage:TweenPosition(UDim2.new(0.361979187, 0, -0.7, 0))
+	wait(1)
+	DarkCyberMainGUI:Destroy()
 end)
 
 Destroy.MouseEnter:Connect(function()
-Destroy.TextColor3 = Color3.new(255,0,0)
+	Destroy.TextColor3 = Color3.new(255,0,0)
 end)
 
 Destroy.MouseLeave:Connect(function()
-Destroy.TextColor3 = Color3.new(255,255,255)
+	Destroy.TextColor3 = Color3.new(255,255,255)
 end)
 
 Close.MouseButton1Down:Connect(function()
-if Close.Text == "-" then
-      MainPage.Visible = false 
-      Close.Text ="+"
-else
-      MainPage.Visible = true
-      Close.Text = "-"
-end
+	if Close.Text == "-" then
+		MainPage.Visible = false 
+		Close.Text ="+"
+	else
+		MainPage.Visible = true
+		Close.Text = "-"
+	end
 end)
 
 local Waypoints = {
 
-["Tunnel Bear"] = CFrame.new(507.3, 5.7, -45.7),
-["Redfield Boost"] = CFrame.new(-332, 20, 244),
-["Bluefield Boost"] = CFrame.new(319, 58, 103),
-["MountainTop Boost"] = CFrame.new(-40, 176, -191.7),
-["Bee Shop"] = CFrame.new(-136.8, 4.6, 243.4),
-["Tool Shop"] = CFrame.new(86, 4.6, 294),
-["Tool Shop 2"] = CFrame.new(165, 69, -161),
-["MountainTop Shop"] = CFrame.new(-18, 176, -137),
-["Red Clubhouse"] = CFrame.new(-334, 21, 216),
-["Blue Clubhouse"] = CFrame.new(292, 4, 98),
-["Ticket Shop"] = CFrame.new(-12.8, 184, -222.2),
-["Club Honey"] = CFrame.new(44.8, 5, 319.6),
-["RoyalJelly Shop"] = CFrame.new(-297, 53, 68),
-["Ticket RoyalJelly Shop"] = CFrame.new(81, 18, 240),
-["Honeystorm Dispensor"] = CFrame.new(238.4, 33.3, 165.6),
-["Blueberry Dispenser"] = CFrame.new(313.3, 58, 86.9),
-["Strawberry Dispenser"] = CFrame.new(-320.5, 46, 272.5),
-["Sprout Dispenser"] = CFrame.new(-269.26, 26.56, 267.31),
-["Instant Honey Convertor"] = CFrame.new(282, 68, -62),
-["King Beetles Lair"] = CFrame.new(218, 3, 140),
-["Clover Field"] = CFrame.new(174, 34, 189),
-["Mushroom Field"] = CFrame.new(-258.1, 5, 299.7),
-["Spider Field"] = CFrame.new(-57.2, 20, -5.3),
-["Blue Field"] = CFrame.new(113.7, 4, 101.5),
-["Sunflower Field"] = CFrame.new(-208, 4, 185),
-["StrawBerry Field"] = CFrame.new(-169.3, 20, -3.2),
-["Red Field"] = CFrame.new(-258.1, 5, 299.7),
-["Dandelion Field"] = CFrame.new(-30, 4, 225),
-["BamBoo Field"] = CFrame.new(93, 20, -25),
-["Rose Field"] = CFrame.new(-322, 20, 124),
-["Mushroom Field"] = CFrame.new(-94, 5, 116),
-["Cactus Field"] = CFrame.new(-194, 68, -107),
-["Pumpkin Field"] = CFrame.new(-194, 68, -182),
-["MountainTop Field"] = CFrame.new(76, 176, -181),
-["PineTree Field"] = CFrame.new(-318, 68, -150),
-["Pineapple Field"] = CFrame.new(262, 68, -201),
-["Onett"] = CFrame.new(-8.4, 234, -517.9),
-["Gumdrop Dispenser"] = CFrame.new(63, 20.7, 38.7),
-["Treat Dispenser"] = CFrame.new(193.9, 68, -123),
-["Treat Shop"] = CFrame.new(-228.2, 5, 89.4),
-["Star Hut"] = CFrame.new(135.9, 64.6, 322.1),
-["Wealth Clock"] = CFrame.new(310.5, 47.6, 190),
-["Coconut Field"] = CFrame.new(-255,72,459),
-["Pepper Patch"] = CFrame.new(-486,124,517),
-["CCN"] = CFrame.new(-176,71,534),
-["Nuoc"] = CFrame.new(-426,70,38),
-["Moon"] = CFrame.new(21,88,-54),
-["Kill Snail"] = CFrame.new(420,117,-178),
-["CC"] = CFrame.new(270,25260,-718),
-["CC1"] = CFrame.new(-147,5,195),
-["CC2"] = CFrame.new(-431,70,-53),
-["CC3"] = CFrame.new(-23,318,-270),
-["CC4"] = CFrame.new(-405,110,545),
-["CC5"] = CFrame.new(136,66,322),
-["CC6"] = CFrame.new(-270,28,267),
-["CC7"] = CFrame.new(312,49,189),
-["CC8"] = CFrame.new(218,5,140),
-["Ant"] = CFrame.new(112,32,477),
-["CC9"] = CFrame.new(592,7,-46),
-["CC12"] = CFrame.new(-500,52,458),
-["CC13"] = CFrame.new(291,28,271),
-["CC14"] = CFrame.new(272,25268,-773),
-["CC15"] = CFrame.new(-336,133,-387),
-["CC16"] = CFrame.new(218,5,140),
-["CC17"] = CFrame.new(218,5,140),
-["CC19"] = CFrame.new(-486,142,410),
-["CC18"] = CFrame.new(218,5,140)
+	["Tunnel Bear"] = CFrame.new(507.3, 5.7, -45.7),
+	["Redfield Boost"] = CFrame.new(-332, 20, 244),
+	["Bluefield Boost"] = CFrame.new(319, 58, 103),
+	["MountainTop Boost"] = CFrame.new(-40, 176, -191.7),
+	["Bee Shop"] = CFrame.new(-136.8, 4.6, 243.4),
+	["Tool Shop"] = CFrame.new(86, 4.6, 294),
+	["Tool Shop 2"] = CFrame.new(165, 69, -161),
+	["MountainTop Shop"] = CFrame.new(-18, 176, -137),
+	["Red Clubhouse"] = CFrame.new(-334, 21, 216),
+	["Blue Clubhouse"] = CFrame.new(292, 4, 98),
+	["Ticket Shop"] = CFrame.new(-12.8, 184, -222.2),
+	["Club Honey"] = CFrame.new(44.8, 5, 319.6),
+	["RoyalJelly Shop"] = CFrame.new(-297, 53, 68),
+	["Ticket RoyalJelly Shop"] = CFrame.new(81, 18, 240),
+	["Honeystorm Dispensor"] = CFrame.new(238.4, 33.3, 165.6),
+	["Blueberry Dispenser"] = CFrame.new(313.3, 58, 86.9),
+	["Strawberry Dispenser"] = CFrame.new(-320.5, 46, 272.5),
+	["Sprout Dispenser"] = CFrame.new(-269.26, 26.56, 267.31),
+	["Instant Honey Convertor"] = CFrame.new(282, 68, -62),
+	["King Beetles Lair"] = CFrame.new(218, 3, 140),
+	["Clover Field"] = CFrame.new(174, 34, 189),
+	["Mushroom Field"] = CFrame.new(-258.1, 5, 299.7),
+	["Spider Field"] = CFrame.new(-57.2, 20, -5.3),
+	["Blue Field"] = CFrame.new(113.7, 4, 101.5),
+	["Sunflower Field"] = CFrame.new(-208, 4, 185),
+	["StrawBerry Field"] = CFrame.new(-169.3, 20, -3.2),
+	["Red Field"] = CFrame.new(-258.1, 5, 299.7),
+	["Dandelion Field"] = CFrame.new(-30, 4, 225),
+	["BamBoo Field"] = CFrame.new(93, 20, -25),
+	["Rose Field"] = CFrame.new(-322, 20, 124),
+	["Mushroom Field"] = CFrame.new(-94, 5, 116),
+	["Cactus Field"] = CFrame.new(-194, 68, -107),
+	["Pumpkin Field"] = CFrame.new(-194, 68, -182),
+	["MountainTop Field"] = CFrame.new(76, 176, -181),
+	["PineTree Field"] = CFrame.new(-318, 68, -150),
+	["Pineapple Field"] = CFrame.new(262, 68, -201),
+	["Onett"] = CFrame.new(-8.4, 234, -517.9),
+	["Gumdrop Dispenser"] = CFrame.new(63, 20.7, 38.7),
+	["Treat Dispenser"] = CFrame.new(193.9, 68, -123),
+	["Treat Shop"] = CFrame.new(-228.2, 5, 89.4),
+	["Star Hut"] = CFrame.new(135.9, 64.6, 322.1),
+	["Wealth Clock"] = CFrame.new(310.5, 47.6, 190),
+	["Coconut Field"] = CFrame.new(-255,72,459),
+	["Pepper Patch"] = CFrame.new(-486,124,517),
+	["CCN"] = CFrame.new(-176,71,534),
+	["Nuoc"] = CFrame.new(-426,70,38),
+	["Moon"] = CFrame.new(21,88,-54),
+	["Kill Snail"] = CFrame.new(420,117,-178),
+	["CC"] = CFrame.new(270,25260,-718),
+	["CC1"] = CFrame.new(-147,5,195),
+	["CC2"] = CFrame.new(-431,70,-53),
+	["CC3"] = CFrame.new(-23,318,-270),
+	["CC4"] = CFrame.new(-405,110,545),
+	["CC5"] = CFrame.new(136,66,322),
+	["CC6"] = CFrame.new(-270,28,267),
+	["CC7"] = CFrame.new(312,49,189),
+	["CC8"] = CFrame.new(218,5,140),
+	["Ant"] = CFrame.new(112,32,477),
+	["CC9"] = CFrame.new(592,7,-46),
+	["CC12"] = CFrame.new(-500,52,458),
+	["CC13"] = CFrame.new(291,28,271),
+	["CC14"] = CFrame.new(272,25268,-773),
+	["CC15"] = CFrame.new(-336,133,-387),
+	["CC16"] = CFrame.new(218,5,140),
+	["CC17"] = CFrame.new(218,5,140),
+	["CC19"] = CFrame.new(-486,142,410),
+	["CC18"] = CFrame.new(218,5,140)
 }
 
 local nightbell = false
 Autokillmonster.MouseButton1Down:connect(function()
-if nightbell == false then
-      Autokillmonster.BackgroundColor3 = red 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      nightbell = true
-      while nightbell do
-            wait(5)
-             local A = {
+	if nightbell == false then
+		Autokillmonster.BackgroundColor3 = red 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		nightbell = true
+		while nightbell do
+			wait(5)
+			local A = {
 
-            ["Name"] = "Night Bell"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      end
-else 
-      nightbell = false 
-       Autokillmonster.BackgroundColor3 = blue
-end
-      
+				["Name"] = "Night Bell"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+		end
+	else 
+		nightbell = false 
+		Autokillmonster.BackgroundColor3 = blue
+	end
+
 end)
 WindyBeetp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC19"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC19"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Diamondmasktp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC15"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC15"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Demonmasktp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC13"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC13"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Stinger.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Ant"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Ant"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 
 TunelBeartp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Tunnel Bear"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Tunnel Bear"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 GummyMask.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC14"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC14"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Coconutshoptp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CCN"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CCN"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Petaltp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC12"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC12"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Stumptp.MouseButton1Down:connect(function()
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Kill Snail"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Kill Snail"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Suntp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Sunflower Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Sunflower Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Dantp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Dandelion Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Dandelion Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Clovertp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Clover Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Clover Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Bambootp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["BamBoo Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["BamBoo Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Blueftp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Blue Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Blue Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Mushtp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Mushroom Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Mushroom Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Spidertp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Spider Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Spider Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Strawtp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["StrawBerry Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["StrawBerry Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Pineappletp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Pineapple Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Pineapple Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Rosetp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Rose Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Rose Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Castustp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Cactus Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Cactus Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Pumtp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Pumpkin Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Pumpkin Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Pintreetp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["PineTree Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["PineTree Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Toptp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["MountainTop Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["MountainTop Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Coconuttp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Coconut Field"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Coconut Field"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Peppertp.MouseButton1Down:connect(function()
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Pepper Patch"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Pepper Patch"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 
 
 Autored.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local a = "Red Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-      while wait(10) do
-local a = "Red Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-end
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local a = "Red Field Booster"
+	local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+	Event:FireServer(a)
+	while wait(10) do
+		local a = "Red Field Booster"
+		local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+		Event:FireServer(a)
+	end
 end)
 Autoblue.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local a = "Blue Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-      while wait(10) do
-local a = "Blue Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-      end
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local a = "Blue Field Booster"
+	local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+	Event:FireServer(a)
+	while wait(10) do
+		local a = "Blue Field Booster"
+		local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+		Event:FireServer(a)
+	end
 end)
 
 AutoDispenser_2.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      
-local a = "Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-      while wait(10) do 
-local a = "Field Booster"
-local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-Event:FireServer(a)
-      end
-      
+	MainPage.Visible = false 
+	Close.Text ="+"
+
+	local a = "Field Booster"
+	local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+	Event:FireServer(a)
+	while wait(10) do 
+		local a = "Field Booster"
+		local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+		Event:FireServer(a)
+	end
+
 end)
 
 local afksnail = false
 Afkstumptp.MouseButton1Down:connect(function(l)
-if afksnail == false then 
-      afksnail = true 
-      Afkstumptp.BackgroundColor3 = red 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      noclip = true
-      while afksnail do
-            wait()
-            
-            local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Kill Snail"]
-      end
-else 
-      afksnail = false 
-      Afkstumptp.BackgroundColor3 = blue 
-end
+	if afksnail == false then 
+		afksnail = true 
+		Afkstumptp.BackgroundColor3 = red 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		noclip = true
+		while afksnail do
+			wait()
+
+			local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+			uTorso.CFrame = Waypoints["Kill Snail"]
+		end
+	else 
+		afksnail = false 
+		Afkstumptp.BackgroundColor3 = blue 
+	end
 end)
 
-      
-      
+
+
 
 Shopbasictp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Tool Shop"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Tool Shop"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Shopproctp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Tool Shop 2"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Tool Shop 2"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Shoptoptp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["MountainTop Shop"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["MountainTop Shop"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Shopsprinklertp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Nuoc"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Nuoc"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Shopmoontp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Moon"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Moon"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 
 
 InstantConversiontp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC1"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC1"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 MegaMemorytp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC2"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC2"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 NightMemorytp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC3"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC3"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 ExtremeMemorytp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC4"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC4"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 StartHalltp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC5"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC5"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 SummonSprouttp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC6"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC6"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Anttp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Ant"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["Ant"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 Kingamulettp.MouseButton1Down:connect(function()
-      
-local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["CC8"]
-      MainPage.Visible = false 
-      Close.Text ="+"
+
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = Waypoints["CC8"]
+	MainPage.Visible = false 
+	Close.Text ="+"
 end)
 
 --auto
@@ -2059,46 +2059,46 @@ end)
 
 local dispenser = false
 AutoDispenser.MouseButton1Down:connect(function()
-if dispenser == false then 
-      dispenser = true 
-      AutoDispenser.BackgroundColor3 = red 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      while dispenser do
-            wait(5)
-      
-      local A_1 = "Glue Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Wealth Clock"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Coconut Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Strawberry Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Treat Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Free Ant Pass Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Blueberry Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Honey Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  local A_1 = "Free Royal Jelly Dispenser"
-                  local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
-                  Event:FireServer(A_1)
-                  end
-else 
-      dispenser = false 
-      AutoDispenser.BackgroundColor3 = blue 
-end
+	if dispenser == false then 
+		dispenser = true 
+		AutoDispenser.BackgroundColor3 = red 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		while dispenser do
+			wait(5)
+
+			local A_1 = "Glue Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Wealth Clock"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Coconut Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Strawberry Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Treat Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Free Ant Pass Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Blueberry Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Honey Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+			local A_1 = "Free Royal Jelly Dispenser"
+			local Event = game:GetService("ReplicatedStorage").Events.ToyEvent
+			Event:FireServer(A_1)
+		end
+	else 
+		dispenser = false 
+		AutoDispenser.BackgroundColor3 = blue 
+	end
 end)
 
 
@@ -2106,21 +2106,34 @@ end)
 
 
 
-
-Dropweapon.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-game.Players.LocalPlayer.Character.Humanoid.Name = 1
-local l = game.Players.LocalPlayer.Character["1"]:Clone()
-l.Parent = game.Players.LocalPlayer.Character
-l.Name = "Humanoid"
-wait(0.1)
-game.Players.LocalPlayer.Character["1"]:Destroy()
-game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
-game.Players.LocalPlayer.Character.Animate.Disabled = true
-wait(0.1)
-game.Players.LocalPlayer.Character.Animate.Disabled = false
-game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+local sigma = false
+local t = "rbxassetid://6087969886"
+Dropweapon.MouseButton1Down:Connect(function()
+	if sigma == false then 
+		sigma = true 
+		Dropweapon.BackgroundColor3 = red 
+		MainPage.Visible = false 
+		Close.Text = "+"
+		local tweenservice = game:GetService("TweenService")
+		local plr = game.Players.LocalPlayer
+		local info = TweenInfo.new(0.1)
+		while sigma do
+			local collectibles = game.Workspace.Collectibles:GetDescendants()
+			for _, collectible in ipairs(collectibles) do
+				if collectible.Name == "BackDecal" and collectible:IsA("Decal") and collectible.Texture == t then
+					local part = collectible.Parent
+					if part and part:IsA("BasePart") then
+						plr.Character:WaitForChild("HumanoidRootPart").CFrame = part.CFrame
+						wait(1)
+					end
+				end
+			end
+			wait(1)
+		end
+	else
+		sigma = false
+		Dropweapon.BackgroundColor3 = blue
+	end
 end)
 
 
@@ -2128,35 +2141,35 @@ end)
 
 local killtunell = false
 KillTunnel.MouseButton1Down:connect(function(j)
-      if killtunell == false then
-      MainPage.Visible = false 
-      Close.Text ="+" 
-      local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
-      uTorso.CFrame = Waypoints["Tunnel Bear"]
-      killtunell = true 
-      KillTunnel.BackgroundColor3 = red 
-      noclip = true
-      for _,v in pairs(game.workspace.Decorations.TrapTunnel:GetChildren()) do 
-      if string.find(v.Name,"") then 
-            v:Destroy()
+	if killtunell == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+		uTorso.CFrame = Waypoints["Tunnel Bear"]
+		killtunell = true 
+		KillTunnel.BackgroundColor3 = red 
+		noclip = true
+		for _,v in pairs(game.workspace.Decorations.TrapTunnel:GetChildren()) do 
+			if string.find(v.Name,"") then 
+				v:Destroy()
 
-      end
-      end
-      wait(6)
-      while killtunell do
-            wait()
-      for _,v in pairs(game.Workspace.Monsters:GetChildren()) do
-      if string.find(v.Name,"Tunnel") then
-      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,20.5,0)
+			end
+		end
+		wait(6)
+		while killtunell do
+			wait()
+			for _,v in pairs(game.Workspace.Monsters:GetChildren()) do
+				if string.find(v.Name,"Tunnel") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,20.5,0)
 
-      end
-      end
-      end
-      else 
-      noclip = false    
-      killtunell = false 
-      KillTunnel.BackgroundColor3 = blue 
-end
+				end
+			end
+		end
+	else 
+		noclip = false    
+		killtunell = false 
+		KillTunnel.BackgroundColor3 = blue 
+	end
 end)
 
 
@@ -2165,17 +2178,17 @@ end)
 
 noclip = false
 game:GetService('RunService').Stepped:connect(function()
-if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end
+	if noclip then
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end
 end)
 plr = game.Players.LocalPlayer
 mouse = plr:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "o" then
-noclip = not noclip
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end
+	if key == "o" then
+		noclip = not noclip
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end
 end)
 
 
@@ -2184,27 +2197,27 @@ end)
 
 local killcoconut = false
 Killcoconutcrab.MouseButton1Down:connect(function()
-      if killcoconut == false then 
-            MainPage.Visible = false 
-      Close.Text ="+"
-      Killcoconutcrab.BackgroundColor3 = red
-      killcoconut = true 
-      noclip = true
-      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-256.375092, 112.547897, 500.457794, 0.998952866, -0.0450557806, 0.00794458669, -8.64538929e-09, 0.173648775, 0.98480767, -0.0457508452, -0.98377645, 0.173466951)
-else 
-      killcoconut = false 
-      noclip = false
-      Killcoconutcrab.BackgroundColor3 = blue
-end
+	if killcoconut == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		Killcoconutcrab.BackgroundColor3 = red
+		killcoconut = true 
+		noclip = true
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-256.375092, 112.547897, 500.457794, 0.998952866, -0.0450557806, 0.00794458669, -8.64538929e-09, 0.173648775, 0.98480767, -0.0457508452, -0.98377645, 0.173466951)
+	else 
+		killcoconut = false 
+		noclip = false
+		Killcoconutcrab.BackgroundColor3 = blue
+	end
 end)
 
 
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
-  vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-  wait(1)
-  vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-print ("Afk 15m")
+	vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	wait(1)
+	vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	print ("Afk 15m")
 end)
 
 
@@ -2212,31 +2225,31 @@ end)
 
 local stinger = false
 Autostinger.MouseButton1Down:connect(function(b)
-if stinger == false then
-      MainPage.Visible = false 
-      Close.Text ="+"
-      stinger = true 
-      Autostinger.BackgroundColor3 = red
-      local A = {
+	if stinger == false then
+		MainPage.Visible = false 
+		Close.Text ="+"
+		stinger = true 
+		Autostinger.BackgroundColor3 = red
+		local A = {
 
-            ["Name"] = "Stinger"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      while stinger do
-            wait(30)
-      
-            local A = {
+			["Name"] = "Stinger"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		while stinger do
+			wait(30)
 
-            ["Name"] = "Stinger"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      end 
-else 
-      stinger = false 
-      Autostinger.BackgroundColor3 = blue
-end
+			local A = {
+
+				["Name"] = "Stinger"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+		end 
+	else 
+		stinger = false 
+		Autostinger.BackgroundColor3 = blue
+	end
 
 end)
 
@@ -2244,198 +2257,198 @@ end)
 
 local item = false
 Autobuffitem.MouseButton1Down:connect(function(c)
-if item == false then 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      item = true 
-      Autobuffitem.BackgroundColor3 = red
-      local A = {
+	if item == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		item = true 
+		Autobuffitem.BackgroundColor3 = red
+		local A = {
 
-            ["Name"] = "Blue Extract"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Blue Extract"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Red Extract"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Red Extract"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Oil"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Oil"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Enzymes"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Enzymes"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Glue"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Glue"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Glitter"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			["Name"] = "Glitter"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		local A = {
 
-            ["Name"] = "Tropical Drink"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      while item do
-            wait(600)
-      
-            local A = {
+			["Name"] = "Tropical Drink"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		while item do
+			wait(600)
 
-            ["Name"] = "Blue Extract"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+			local A = {
 
-            ["Name"] = "Red Extract"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+				["Name"] = "Blue Extract"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
 
-            ["Name"] = "Oil"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+				["Name"] = "Red Extract"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
 
-            ["Name"] = "Enzymes"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+				["Name"] = "Oil"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
 
-            ["Name"] = "Glue"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+				["Name"] = "Enzymes"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
 
-            ["Name"] = "Glitter"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      local A = {
+				["Name"] = "Glue"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
 
-            ["Name"] = "Tropical Drink"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      
-      end
-      
-else 
-      item = false 
-      Autobuffitem.BackgroundColor3 = blue
-end
+				["Name"] = "Glitter"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+			local A = {
+
+				["Name"] = "Tropical Drink"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+
+		end
+
+	else 
+		item = false 
+		Autobuffitem.BackgroundColor3 = blue
+	end
 end)
 
 
 
 local gliter = false
 Autogliter.MouseButton1Down:connect(function(d)
-if gliter == false then
-      MainPage.Visible = false 
-      Close.Text ="+" 
-      gliter = true 
-      Autogliter.BackgroundColor3 = red
-      local A = {
+	if gliter == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		gliter = true 
+		Autogliter.BackgroundColor3 = red
+		local A = {
 
-            ["Name"] = "Glitter"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      while gliter do
-            wait(920)
-      
-            local A = {
+			["Name"] = "Glitter"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		while gliter do
+			wait(920)
 
-            ["Name"] = "Glitter"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      
-      
-            end
-else 
-      gliter = false 
-      Autogliter.BackgroundColor3 = blue
-end
+			local A = {
+
+				["Name"] = "Glitter"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+
+
+		end
+	else 
+		gliter = false 
+		Autogliter.BackgroundColor3 = blue
+	end
 end)
 
 
 
 local coconut = false
 Autococonut.MouseButton1Down:connect(function(e)
-if coconut == false then 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      coconut = true 
-      Autococonut.BackgroundColor3 = red
-      local A = {
+	if coconut == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		coconut = true 
+		Autococonut.BackgroundColor3 = red
+		local A = {
 
-            ["Name"] = "Coconut"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      while coconut do
-            wait(11)
-      
-            local A = {
+			["Name"] = "Coconut"
+		}
+		local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+		Event:FireServer(A)
+		while coconut do
+			wait(11)
 
-            ["Name"] = "Coconut"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      
-      end
-else 
-      coconut = false
-      Autococonut.BackgroundColor3 = blue
-end
+			local A = {
+
+				["Name"] = "Coconut"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+
+		end
+	else 
+		coconut = false
+		Autococonut.BackgroundColor3 = blue
+	end
 end)
 
-      
 
 
 
-      
+
+
 local AutoDig = false
 Autodig.MouseButton1Down:connect(function()
-      if AutoDig == false then
-            MainPage.Visible = false 
-      Close.Text ="+" 
-      AutoDig = true 
-      Autodig.BackgroundColor3 = red
-      while AutoDig do
-            wait(0.5)
-            
- for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
-      if v:IsA("Tool") then 
-            v.ClickEvent:FireServer()
-      
-      end
-            end
-            end
-else 
-      AutoDig = false
-      Autodig.BackgroundColor3 = blue
-end
+	if AutoDig == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		AutoDig = true 
+		Autodig.BackgroundColor3 = red
+		while AutoDig do
+			wait(0.5)
+
+			for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
+				if v:IsA("Tool") then 
+					v.ClickEvent:FireServer()
+
+				end
+			end
+		end
+	else 
+		AutoDig = false
+		Autodig.BackgroundColor3 = blue
+	end
 end)
 
 
@@ -2443,38 +2456,38 @@ end)
 local Sparkles = false
 Useglitter.MouseButton1Down:connect(function()
 
-if Sparkles == false then
-       MainPage.Visible = false 
-      Close.Text ="+" 
-      Sparkles = true 
-      Useglitter.BackgroundColor3 = red
-local test = "C"
-local tweenservice = game:GetService("TweenService")
-local plr = game.Players.LocalPlayer
-local info = TweenInfo.new(0.1) -- change to how long it takes to get to the item (in seconds)
-local item = {}
-while Sparkles do
-wait(0.5)
-for _,v in pairs(game.workspace.Flowers:GetDescendants()) do
-if string.find(v.Name,"Sparkles") then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
-end
-end
-for k,v in pairs(workspace.Collectibles:GetChildren()) do
- if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == test then
-						if (v.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
-item.CFrame = CFrame.new(v.Position.x,plr.Character.HumanoidRootPart.Position.y,v.Position.z)
-local Tween = tweenservice:Create(plr.Character.HumanoidRootPart, info, item)
-Tween:Play()
-end
-end
-end
-end
+	if Sparkles == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		Sparkles = true 
+		Useglitter.BackgroundColor3 = red
+		local test = "C"
+		local tweenservice = game:GetService("TweenService")
+		local plr = game.Players.LocalPlayer
+		local info = TweenInfo.new(0.1) -- change to how long it takes to get to the item (in seconds)
+		local item = {}
+		while Sparkles do
+			wait(0.5)
+			for _,v in pairs(game.workspace.Flowers:GetDescendants()) do
+				if string.find(v.Name,"Sparkles") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+				end
+			end
+			for k,v in pairs(workspace.Collectibles:GetChildren()) do
+				if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == test then
+					if (v.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
+						item.CFrame = CFrame.new(v.Position.x,plr.Character.HumanoidRootPart.Position.y,v.Position.z)
+						local Tween = tweenservice:Create(plr.Character.HumanoidRootPart, info, item)
+						Tween:Play()
+					end
+				end
+			end
+		end
 
-else 
-      Sparkles = false
-      Useglitter.BackgroundColor3 = blue
-end
+	else 
+		Sparkles = false
+		Useglitter.BackgroundColor3 = blue
+	end
 end)
 
 
@@ -2485,195 +2498,195 @@ end)
 
 local gumdrop = false
 Autogumdrop.MouseButton1Down:connect(function(h)
-      if gumdrop == false then 
-            MainPage.Visible = false 
-      Close.Text ="+"
-      gumdrop = true 
-      Autogumdrop.BackgroundColor3 = red
-      while gumdrop do
-            wait(2)
-            
-            local A = {
+	if gumdrop == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		gumdrop = true 
+		Autogumdrop.BackgroundColor3 = red
+		while gumdrop do
+			wait(2)
 
-            ["Name"] = "Gumdrops"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-      
-            end
-else 
-      gumdrop = false
-      Autogumdrop.BackgroundColor3 = blue
-end
+			local A = {
+
+				["Name"] = "Gumdrops"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+
+		end
+	else 
+		gumdrop = false
+		Autogumdrop.BackgroundColor3 = blue
+	end
 end)
 
 Equipgummymask.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local A_1 = "Equip"
-local A_2 = 
-{
-      ["Mute"] = true, 
-      ["Type"] = "Gummy Mask", 
-      ["Category"] = "Accessory"
-}
-local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
-Event:InvokeServer(A_1, A_2)
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local A_1 = "Equip"
+	local A_2 = 
+		{
+			["Mute"] = true, 
+			["Type"] = "Gummy Mask", 
+			["Category"] = "Accessory"
+		}
+	local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
+	Event:InvokeServer(A_1, A_2)
 end)
 
 local tpwindy = false
 Autokillwindy.MouseButton1Down:connect(function(o)
-      
-      if tpwindy == false then 
-      tpwindy = true 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      Autokillwindy.BackgroundColor3 =red
-      noclip = true
-	local player = game.Players.LocalPlayer
-	local sanghuman = player.Character.HumanoidRootPart
 
-      while tpwindy do
-            wait()
-            
-     for _,v in pairs(game.workspace.Monsters:GetChildren()) do 
-      if string.find(v.Name,"Windy") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Torso.CFrame * CFrame.new(0,25,0)
-end
-end
- for k,r in pairs(workspace.Collectibles:GetChildren()) do
-            if tostring(r) == tostring(game.Players.LocalPlayer.Name) or tostring(r) == "C" then
-						if (r.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 25 then
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = r.CFrame
-                local intvalue = Instance.new("IntValue",r)
-                intvalue.Name = "Void"
-end
-end
-end
-      end
-else 
-      tpwindy = false
-      noclip = false
-      Autokillwindy.BackgroundColor3 =blue
-end
+	if tpwindy == false then 
+		tpwindy = true 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		Autokillwindy.BackgroundColor3 =red
+		noclip = true
+		local player = game.Players.LocalPlayer
+		local sanghuman = player.Character.HumanoidRootPart
+
+		while tpwindy do
+			wait()
+
+			for _,v in pairs(game.workspace.Monsters:GetChildren()) do 
+				if string.find(v.Name,"Windy") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Torso.CFrame * CFrame.new(0,25,0)
+				end
+			end
+			for k,r in pairs(workspace.Collectibles:GetChildren()) do
+				if tostring(r) == tostring(game.Players.LocalPlayer.Name) or tostring(r) == "C" then
+					if (r.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 25 then
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = r.CFrame
+						local intvalue = Instance.new("IntValue",r)
+						intvalue.Name = "Void"
+					end
+				end
+			end
+		end
+	else 
+		tpwindy = false
+		noclip = false
+		Autokillwindy.BackgroundColor3 =blue
+	end
 end)
 
-      
-      
-      
+
+
+
 
 
 
 
 local tornado = false
 Bringtornado.MouseButton1Down:connect(function()
-if tornado == false then 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      tornado = true 
-      Bringtornado.BackgroundColor3 = red
-while tornado do
-wait(0.3)
-local test = "Root"
-local test2 = "Plane"
-local tweenservice = game:GetService("TweenService")
-local plr = game.Players.LocalPlayer
-local info = TweenInfo.new(0.3) -- change to how long it takes to get to the item (in seconds)
-local item = {}
+	if tornado == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		tornado = true 
+		Bringtornado.BackgroundColor3 = red
+		while tornado do
+			wait(0.3)
+			local test = "Root"
+			local test2 = "Plane"
+			local tweenservice = game:GetService("TweenService")
+			local plr = game.Players.LocalPlayer
+			local info = TweenInfo.new(0.3) -- change to how long it takes to get to the item (in seconds)
+			local item = {}
 
-for i,v in pairs(game.workspace.Particles:GetDescendants()) do
-if v.Name == test or v.Name == test2 then
-for _,i in pairs(game.workspace.Collectibles:GetChildren()) do
-if tostring(i) == tostring(game.Players.LocalPlayer.Name) or tostring(i) == "C" then
-if (i.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
+			for i,v in pairs(game.workspace.Particles:GetDescendants()) do
+				if v.Name == test or v.Name == test2 then
+					for _,i in pairs(game.workspace.Collectibles:GetChildren()) do
+						if tostring(i) == tostring(game.Players.LocalPlayer.Name) or tostring(i) == "C" then
+							if (i.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
 
-item.CFrame = CFrame.new(i.Position.x,plr.Character.HumanoidRootPart.Position.y,i.Position.z)
+								item.CFrame = CFrame.new(i.Position.x,plr.Character.HumanoidRootPart.Position.y,i.Position.z)
 
-local Tween = tweenservice:Create(v, info, item)
-Tween:Play()
-end
-end
-end
-end
-end
-end
-else
-      tornado = false 
-      Bringtornado.BackgroundColor3 = blue
-end
+								local Tween = tweenservice:Create(v, info, item)
+								Tween:Play()
+							end
+						end
+					end
+				end
+			end
+		end
+	else
+		tornado = false 
+		Bringtornado.BackgroundColor3 = blue
+	end
 end)
 
 
 
 Equipdemonmask.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local A_1 = "Equip"
-local A_2 = 
-{
-      ["Mute"] = true, 
-      ["Type"] = "Demon Mask", 
-      ["Category"] = "Accessory"
-}
-local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
-Event:InvokeServer(A_1, A_2)
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local A_1 = "Equip"
+	local A_2 = 
+		{
+			["Mute"] = true, 
+			["Type"] = "Demon Mask", 
+			["Category"] = "Accessory"
+		}
+	local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
+	Event:InvokeServer(A_1, A_2)
 end)
 Eqipdemonmask.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local A_1 = "Equip"
-local A_2 = 
-{
-      ["Mute"] = true, 
-      ["Type"] = "Diamond Mask", 
-      ["Category"] = "Accessory"
-}
-local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
-Event:InvokeServer(A_1, A_2)
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local A_1 = "Equip"
+	local A_2 = 
+		{
+			["Mute"] = true, 
+			["Type"] = "Diamond Mask", 
+			["Category"] = "Accessory"
+		}
+	local Event = game:GetService("ReplicatedStorage").Events.ItemPackageEvent
+	Event:InvokeServer(A_1, A_2)
 end)
 
 
 
 local Drop = false
 Automagicbean.MouseButton1Down:connect(function(a)
-if Drop == false then 
-      MainPage.Visible = false 
-      Close.Text ="+"
-      Drop = true 
-      Automagicbean.BackgroundColor3 =red
-      while Drop do
-            wait(0.3)
-      
-            local A = {
+	if Drop == false then 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		Drop = true 
+		Automagicbean.BackgroundColor3 =red
+		while Drop do
+			wait(0.3)
 
-            ["Name"] = "Magic Bean"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
-            end
-else 
-      Drop = false
-      Automagicbean.BackgroundColor3 =blue
-end
+			local A = {
+
+				["Name"] = "Magic Bean"
+			}
+			local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+			Event:FireServer(A)
+		end
+	else 
+		Drop = false
+		Automagicbean.BackgroundColor3 =blue
+	end
 end)
 
-      
-            
+
+
 
 
 
 
 
 Noclip.MouseButton1Down:Connect(function()
-if noclip == false then 
-      noclip = true
-      MainPage.Visible = false 
-      Close.Text ="+" 
-      Noclip.BackgroundColor3 = red
-else 
-      noclip = false
-      Noclip.BackgroundColor3 = blue
-end
+	if noclip == false then 
+		noclip = true
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		Noclip.BackgroundColor3 = red
+	else 
+		noclip = false
+		Noclip.BackgroundColor3 = blue
+	end
 end)
 
 
@@ -2682,25 +2695,25 @@ end)
 
 local Windy = false
 FindWindBee.MouseButton1Down:connect(function(w)
-      if Windy == false then
-            MainPage.Visible = false 
-      Close.Text ="+" 
-      Windy = true 
-      FindWindBee.BackgroundColor3 =red
-      noclip = true
-while Windy do
-wait()
-for _,v in pairs(game.workspace.NPCBees:GetChildren()) do
-      if v.Name == "Windy" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-end
-end
-end
-else 
-      Windy = false
-      noclip = false
-      FindWindBee.BackgroundColor3 =blue
-      end
+	if Windy == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		Windy = true 
+		FindWindBee.BackgroundColor3 =red
+		noclip = true
+		while Windy do
+			wait()
+			for _,v in pairs(game.workspace.NPCBees:GetChildren()) do
+				if v.Name == "Windy" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+				end
+			end
+		end
+	else 
+		Windy = false
+		noclip = false
+		FindWindBee.BackgroundColor3 =blue
+	end
 end)
 
 
@@ -2710,14 +2723,14 @@ end)
 
 
 Usenightbell.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local A = {
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local A = {
 
-            ["Name"] = "Night Bell"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
+		["Name"] = "Night Bell"
+	}
+	local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+	Event:FireServer(A)
 end)
 
 
@@ -2725,14 +2738,14 @@ end)
 
 
 Usefielddice.MouseButton1Down:connect(function()
-      MainPage.Visible = false 
-      Close.Text ="+"
-      local A = {
+	MainPage.Visible = false 
+	Close.Text ="+"
+	local A = {
 
-            ["Name"] = "Field Dice"
-      }
-      local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-      Event:FireServer(A)
+		["Name"] = "Field Dice"
+	}
+	local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+	Event:FireServer(A)
 end)
 
 
@@ -2742,117 +2755,117 @@ end)
 
 local killvici = false
 Autokillvicious.MouseButton1Down:connect(function(q)
-      if killvici == false then
-            MainPage.Visible = false 
-      Close.Text ="+" 
-      killvici = true 
-      Autokillvicious.BackgroundColor3 =red
-      noclip = true
-      while killvici do
-            wait()
-            
-            
-      for _,i in pairs(game.workspace.Particles:GetChildren()) do 
-      if string.find(i.Name,"Waiti") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = i.CFrame
-      end
-      end
-for _,v in pairs(game.workspace.Monsters:GetChildren()) do 
-      if string.find(v.Name,"Vici") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Torso.CFrame * CFrame.new(0,13,0)
-            
-      end
-end
-for _,r in pairs(game.workspace.Monsters:GetChildren()) do 
-      if string.find(r.Name,"Gifted") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = r.Torso.CFrame * CFrame.new(0,13,0)
-      
-            end
-            
-      end
-      end
-else 
-      killvici = false
-      noclip = false
-      Autokillvicious.BackgroundColor3 =blue
-      end
+	if killvici == false then
+		MainPage.Visible = false 
+		Close.Text ="+" 
+		killvici = true 
+		Autokillvicious.BackgroundColor3 =red
+		noclip = true
+		while killvici do
+			wait()
+
+
+			for _,i in pairs(game.workspace.Particles:GetChildren()) do 
+				if string.find(i.Name,"Waiti") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = i.CFrame
+				end
+			end
+			for _,v in pairs(game.workspace.Monsters:GetChildren()) do 
+				if string.find(v.Name,"Vici") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Torso.CFrame * CFrame.new(0,13,0)
+
+				end
+			end
+			for _,r in pairs(game.workspace.Monsters:GetChildren()) do 
+				if string.find(r.Name,"Gifted") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = r.Torso.CFrame * CFrame.new(0,13,0)
+
+				end
+
+			end
+		end
+	else 
+		killvici = false
+		noclip = false
+		Autokillvicious.BackgroundColor3 =blue
+	end
 end)
 
 SunflowerButton.MouseButton1Down:connect(function()
-      tuoidz = "Sunflower Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Sunflower Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 MushroomButton.MouseButton1Down:connect(function()
-      tuoidz = "Mushroom Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Mushroom Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 DanrButton.MouseButton1Down:connect(function()
-      tuoidz = "Dandelion Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Dandelion Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 DanrButton_2.MouseButton1Down:connect(function()
-      tuoidz = "Clover Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Clover Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 BlueflowerButton.MouseButton1Down:connect(function()
-      tuoidz = "Blue Flower Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Blue Flower Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 BambooButton.MouseButton1Down:connect(function()
-      tuoidz = "Bamboo Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Bamboo Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 BambooButton.MouseButton1Down:connect(function()
-      tuoidz = "Bamboo Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Bamboo Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 SpiderButton.MouseButton1Down:connect(function()
-      tuoidz = "Spider Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Spider Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 StawberryButton.MouseButton1Down:connect(function()
-      tuoidz = "Strawberry Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Strawberry Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 StawberryButton.MouseButton1Down:connect(function()
-      tuoidz = "Strawberry Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Strawberry Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 PineappleButton.MouseButton1Down:connect(function()
-      tuoidz = "Pineapple Patch"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Pineapple Patch"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 StumpButton.MouseButton1Down:connect(function()
-      tuoidz = "Stump Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Stump Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 RoseButton.MouseButton1Down:connect(function()
-      tuoidz = "Rose Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Rose Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 CactusButton.MouseButton1Down:connect(function()
-      tuoidz = "Cactus Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Cactus Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 PumpkinButton.MouseButton1Down:connect(function()
-      tuoidz = "Pumpkin Patch"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Pumpkin Patch"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 PineTreeButton.MouseButton1Down:connect(function()
-      tuoidz = "Pine Tree Forest"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Pine Tree Forest"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 MountainTopButton.MouseButton1Down:connect(function()
-      tuoidz = "Mountain Top Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Mountain Top Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 CoconutButton.MouseButton1Down:connect(function()
-      tuoidz = "Coconut Field"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Coconut Field"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 PepperButton.MouseButton1Down:connect(function()
-      tuoidz = "Pepper Patch"
-      FieldText.Text = "Field Select: "..tuoidz
+	tuoidz = "Pepper Patch"
+	FieldText.Text = "Field Select: "..tuoidz
 end)
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -2862,545 +2875,545 @@ local act6 = false
 local act6temp = false
 local act5 = false
 local function Voiddz(sanghuman,sangzboi)
-local jimmy = coroutine.wrap(function()
-        repeat
-            local sanghuman = player.Character.HumanoidRootPart
-            local hotboi = sanghuman.CFrame
-            local sangzboi = workspace.FlowerZones[tuoidz].CFrame
-            
-        for k,v in pairs(workspace.Collectibles:GetChildren()) do
-            if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == "C" then
-						if (v.Position-sanghuman.Position).magnitude <= 60 then
-                sanghuman.CFrame = CFrame.new(v.Position.x, sanghuman.Position.y, v.Position.z)
-                local intvalue = Instance.new("IntValue",v)
-                intvalue.Name = "Void"
- wait(.05)
-end
-end
-end
-wait(.05)
-sanghuman.CFrame = sangzboi * CFrame.new(0,0,0)
-wait(.05)
-until not act6 or act6temp
-end)
-local jimmy2 = coroutine.wrap(function()
-for k,v in pairs(workspace[player.Name]:GetChildren()) do
-if v.ClassName == "Tool" then
-repeat
-v.ClickEvent:FireServer()
-wait(.1)
-until not act6 or act6temp
-end
-end
-end)
-jimmy()
-jimmy2()
+	local jimmy = coroutine.wrap(function()
+		repeat
+			local sanghuman = player.Character.HumanoidRootPart
+			local hotboi = sanghuman.CFrame
+			local sangzboi = workspace.FlowerZones[tuoidz].CFrame
+
+			for k,v in pairs(workspace.Collectibles:GetChildren()) do
+				if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == "C" then
+					if (v.Position-sanghuman.Position).magnitude <= 60 then
+						sanghuman.CFrame = CFrame.new(v.Position.x, sanghuman.Position.y, v.Position.z)
+						local intvalue = Instance.new("IntValue",v)
+						intvalue.Name = "Void"
+						wait(.05)
+					end
+				end
+			end
+			wait(.05)
+			sanghuman.CFrame = sangzboi * CFrame.new(0,0,0)
+			wait(.05)
+		until not act6 or act6temp
+	end)
+	local jimmy2 = coroutine.wrap(function()
+		for k,v in pairs(workspace[player.Name]:GetChildren()) do
+			if v.ClassName == "Tool" then
+				repeat
+					v.ClickEvent:FireServer()
+					wait(.1)
+				until not act6 or act6temp
+			end
+		end
+	end)
+	jimmy()
+	jimmy2()
 end
 StartButton.MouseButton1Down:connect(function()
-if act6 == true then
-act6 = false
-StartButton.BackgroundColor3 = blue
-StartButton.Text = "START FARMING"
-else
-act6 = true
-StartButton.BackgroundColor3 = red
-StartButton.Text = "STOP FARMING"
-MainPage.Visible = false 
-Close.Text ="+"
-local jimmy3 = coroutine.wrap(function()
-repeat
-wait()
-for k,v in pairs(workspace[player.Name]:GetChildren()) do
-if v:FindFirstChild("Display") then
-if v.Display.Gui.ProgressBar.Size == v.Display.Gui.RedBar.Size or v.Display.Gui.ProgressLabel == player.CoreStats.Pollen.Value.."/"..player.CoreStats.Pollen.Value then
-act6temp = true
-wait(3)
-local sanghuman = player.Character.HumanoidRootPart
-local hotboi = sanghuman.CFrame
-local sangzboi = workspace.FlowerZones[tuoidz].CFrame
-game:GetService("Players").LocalPlayer.Character:MoveTo(game:GetService("Players").LocalPlayer.SpawnPos.Value.p)
-wait(3)
-game:GetService("ReplicatedStorage").Events.PlayerHiveCommand:FireServer("ToggleHoneyMaking")
-repeat wait(.1) until player.CoreStats.Pollen.Value <= 1
-wait(7)                       
-sanghuman.CFrame = sangzboi * CFrame.new(0,0,0)
-wait(1)
-local A = {
-["Name"] = "Sprinkler Builder"
-}
-local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
-Event:FireServer(A)
-wait(1)
-Voiddz(sanghuman,sangzboi)
-act6temp = false
-end
-end
-wait()
-end
-wait(1)
-until not act6
-end)
-Voiddz(sanghuman,sangzboi)
-jimmy3()	
-end
+	if act6 == true then
+		act6 = false
+		StartButton.BackgroundColor3 = blue
+		StartButton.Text = "START FARMING"
+	else
+		act6 = true
+		StartButton.BackgroundColor3 = red
+		StartButton.Text = "STOP FARMING"
+		MainPage.Visible = false 
+		Close.Text ="+"
+		local jimmy3 = coroutine.wrap(function()
+			repeat
+				wait()
+				for k,v in pairs(workspace[player.Name]:GetChildren()) do
+					if v:FindFirstChild("Display") then
+						if v.Display.Gui.ProgressBar.Size == v.Display.Gui.RedBar.Size or v.Display.Gui.ProgressLabel == player.CoreStats.Pollen.Value.."/"..player.CoreStats.Pollen.Value then
+							act6temp = true
+							wait(3)
+							local sanghuman = player.Character.HumanoidRootPart
+							local hotboi = sanghuman.CFrame
+							local sangzboi = workspace.FlowerZones[tuoidz].CFrame
+							game:GetService("Players").LocalPlayer.Character:MoveTo(game:GetService("Players").LocalPlayer.SpawnPos.Value.p)
+							wait(3)
+							game:GetService("ReplicatedStorage").Events.PlayerHiveCommand:FireServer("ToggleHoneyMaking")
+							repeat wait(.1) until player.CoreStats.Pollen.Value <= 1
+							wait(7)                       
+							sanghuman.CFrame = sangzboi * CFrame.new(0,0,0)
+							wait(1)
+							local A = {
+								["Name"] = "Sprinkler Builder"
+							}
+							local Event = game:GetService("ReplicatedStorage").Events.PlayerActivesCommand
+							Event:FireServer(A)
+							wait(1)
+							Voiddz(sanghuman,sangzboi)
+							act6temp = false
+						end
+					end
+					wait()
+				end
+				wait(1)
+			until not act6
+		end)
+		Voiddz(sanghuman,sangzboi)
+		jimmy3()	
+	end
 end)
 RemoteQuest.MouseButton1Down:connect(function()
-if act5 == true then
-act5 = false
-RemoteQuest.BackgroundColor3 = blue
-RemoteQuest.Text = "Auto Quest"
-else
-act5 = true
-RemoteQuest.BackgroundColor3 = red
-RemoteQuest.Text = "Auto Quest"
-repeat
-wait(5)
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pepper")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Coconut")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Playtime")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Honey")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Quest")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Battle")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Ability")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Goo")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Sunflower")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Dandelion")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Mushroom")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Blue Flower")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Clover")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Spider")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Bamboo")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Strawberry")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pineapple")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pumpkin")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Cactus")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Rose")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pine Tree")
-game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Stump")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Glue Dispenser")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Free Royal Jelly Dispenser")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Blueberry Dispenser")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Strawberry Dispenser")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Treat Dispenser")
-game.ReplicatedStorage.Events.ToyEvent:FireServer("Wealth Clock")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Brown Bear")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Polar Bear")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Honey Bee")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Black Bear")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Bucko Bee")
-game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Riley Bee")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Brown Bear")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Polar Bear")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Honey Bee")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Black Bear")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Bucko Bee")
-game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Riley Bee")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Treat Tutorial")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Treat Tutorial")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bonding With Bees")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bonding With Bees")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For A Sunflower Seed")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For A Sunflower Seed")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Gist Of Jellies")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Gist Of Jellies")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For Strawberries")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For Strawberries")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Binging On Blueberries")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Binging On Blueberries")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Royal Jelly Jamboree")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Royal Jelly Jamboree")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For Sunflower Seeds")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For Sunflower Seeds")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Picking Out Pineapples")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Picking Out Pineapples")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Seven To Seven")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Seven To Seven")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mother Bears Midterm")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Mother Bears Midterm")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Eight To Eight")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Eight To Eight")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sights On The Stars")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Sights On The Stars")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Family Final")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Family Final")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Preliminary Research")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Preliminary Research")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Biology Study")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Biology Study")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Proving The Hypothesis")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Proving The Hypothesis")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bear Botany")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bear Botany")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Kingdom Collection")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Kingdom Collection")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Defensive Adaptions")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Devensive Adaptions")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Benefits Of Technology")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Benefits Of Technology")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Study")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Study")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Roses And Weeds")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Roses And Weeds")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Review")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Review")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ongoing Progress")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ongoing Progress")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red / Blue Duality")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Red / Blue Duality")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Costs Of Computation")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Costs Of Computation")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollination Practice")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollination Practice")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Optimizing Abilities")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Optimizing Abilities")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ready For Infrared")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ready For Infrared")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Breaking Down Badges")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Breaking Down Badges")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Subsidized Agriculture")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Subsidized Agriculture")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Meticulously Crafted")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Meticulously Crafted")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Smart, Not Hard")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Smart, Not Hard")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Limits of Language")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Limits of Language")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Patterns and Probability")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Patterns and Probability")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Chemical Analysis")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Chemical Analysis")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mark Mechanics")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Mark Mechanics")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Meditating On Phenomenon")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Meditating On Phenomenon")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beesperanto")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Beesperanto")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Hive Minded Bias")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Hive Minded Bias")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mushroom Measurement Monotony")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Mushroom Measurement Monotony")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Power Of Information")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Power Of Information")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Testing Teamwork")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Testing Teamwork")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Epistemological Endeavor")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Epistemological Endeavor")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Panda Bear")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Panda Bear")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Lesson On Ladybugs")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Lesson On Ladybugs")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhino Rumble")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhino Rumble")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beetle Battle")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Beetle Battle")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Slayer")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Slayer")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ladybug Bonker")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ladybug Bonker")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Slayer 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Slayer 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhino Wrecking")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhino Wrecking")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Final Showdown")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Final Showdown")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Werewolf Hunter")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Werewolf Hunter")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Skirmish with Scorpions")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Skirmish with Scorpions")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mantis Massacre")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Mantis Massacre")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The REAL Final Showdown")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The REAL Final Showdown")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ant Arrival")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ant Arrival")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Winged Wack Attack")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Winged Wack Attack")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Fire Fighter")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Fire Fighter")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Army Ant Assault")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Army Ant Assault")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colossal Combat")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Colossal Combat")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Eager Exterminator")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Eager Exterminator")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Leaper Lickin'")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Leaper Lickin'")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colossal Combat 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Colossal Combat 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Outrageous Onslaught")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Outrageous Onslaught")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Royal Rumble")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Royal Rumble")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 1")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 1")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 3")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 3")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 4")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 4")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 5")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 5")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 1")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 1")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 3")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 3")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 4")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 4")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 5")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 5")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Riley Bee")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Riley Bee")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Bucko Bee")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Bucko Bee")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sunflower Start")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Sunflower Start")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dandelion Deed")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Dandelion Deed")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red Request")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Red Request")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Into The Blue")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Into The Blue")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Variety Fetcher")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Variety Fetcher")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bamboo Boogie")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bamboo Boogie")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red Request 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Red Request 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Cobweb Sweeper")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Cobweb Sweeper")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Leisure Loot")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Leisure Loot")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("White Pollen Wrangler")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("White Pollen Wrangler")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pineapple Picking")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pineapple Picking")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Weed Wacker")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Weed Wacker")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red + Blue = Gold")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Red + Blue = Gold")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colorless Collection")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Colorless Collection")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit of Springtime")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit of Springtime")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Weed Wacker 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Weed Wacker 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 3")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 3")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Lucky Landscaping")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Lucky Landscaping")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Azure Adventure")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Azure Adventure")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pink Pineapples")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pink Pineapples")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Mushrooms")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Mushrooms")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Cobweb Sweeper 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Cobweb Sweeper 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rojo-A-Go-Go")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rojo-A-Go-Go")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pumpkin Plower")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pumpkin Plower")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 4")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 4")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bouncing Around Biomes")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bouncing Around Biomes")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Pineapples")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Pineapples")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rose Request")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rose Request")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For The White Clover")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For The White Clover")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Stomping Grounds")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Stomping Grounds")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Collecting Cliffside")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Collecting Cliffside")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mountain Meandering")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Mountain Meandering")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Quest Of Legends")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Quest Of Legends")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("High Altitude")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("High Altitude")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blissfully Blue")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Blissfully Blue")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rouge Round-up")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rouge Round-up")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("White As Snow")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("White As Snow")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Solo On The Stump")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Solo On The Stump")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colorful Craving")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Colorful Craving")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pumpkins, Please!")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pumpkins, Please!")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Smorgasbord")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Smorgasbord")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 5")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 5")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("White Clover Redux")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("White Clover Redux")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Strawberry Field Forever")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Strawberry Field Forever")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Tasting The Sky")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Tasting The Sky")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Whispy and Crispy")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Whispy and Crispy")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Walk Through The Woods")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Walk Through The Woods")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Get Red-y")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Get Red-y")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("One Stop On The Tip Top")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("One Stop On The Tip Top")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Mushrooms 2")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Mushrooms 2")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pretty Pumpkins")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pretty Pumpkins")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Black Bear, Why?")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Black Bear, Why?")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bee A Star")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bee A Star")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit's Starter")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit's Starter")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The First Offering")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The First Offering")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rules of The Road")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rules of The Road")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("QR Quest")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("QR Quest")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pleasant Pastimes")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pleasant Pastimes")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Nature's Lessons")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Nature's Lessons")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Gifts Of Life")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Gifts Of Life")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Out-Questing Questions")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Out-Questing Questions")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Forcefully Friendly")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Forcefully Friendly")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sway Away")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Sway Away")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Memories of Memories")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Memories of Memories")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beans Becoming")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Beans Becoming")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Do You Bee-lieve In Magic?")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Do You Bee-lieve In Magic?")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Ways Of The Winds / The Wind And Its Way")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Ways Of The Winds / The Wind And Its Way")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beauty Duty")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Beauty Duty")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Witness Grandeur")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Witness Grandeur")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beeternity")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Beeternity")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("A Breath Of Blue")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("A Breath Of Blue")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Glory Of Goo")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Glory Of Goo")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Tickle The Wind")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Tickle The Wind")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhubarb That Could Have Been")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhubarb That Could Have Been")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dreams Of Being A Bee")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Dreams Of Being A Bee")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Sky Over The Stump")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("The Sky Over The Stump")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Space Oblivion")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Space Oblivion")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollenpalooza")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollenpalooza")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dancing With Stick Bug")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Dancing With Stick Bug")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bug Busser")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bug Busser")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bombs, Blueberries, and Bean Bugs")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bombs, Blueberries, and Bean Bugs")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bugs And Boosts")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bugs And Boosts")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Make It Hasty")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Make It Hasty")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Total Focus")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Total Focus")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("On Your Marks")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("On Your Marks")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Look In The Leaves")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Look In The Leaves")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("What About Sprouts")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("What About Sprouts")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bug Beatdown")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bug Beatdown")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Bear Without Despair")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bear Without Despair")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit Spree")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit Spree")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Echoing Call")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Echoing Call")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Spring Out Of The Mountain")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spring Out Of The Mountain")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Goo")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Goo")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Medley")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Medley")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Mushrooms")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Mushrooms")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Picnic")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Picnic")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Pollen")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Pollen")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Rampage")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Rampage")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Roses")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Roses")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Scavenge")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Scavenge")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Skirmish")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Skirmish")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Strawberries")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Strawberries")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Tango")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Tango")
-game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Tour")
-game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Tour")
-until not act5
-end
+	if act5 == true then
+		act5 = false
+		RemoteQuest.BackgroundColor3 = blue
+		RemoteQuest.Text = "Auto Quest"
+	else
+		act5 = true
+		RemoteQuest.BackgroundColor3 = red
+		RemoteQuest.Text = "Auto Quest"
+		repeat
+			wait(5)
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pepper")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Coconut")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Playtime")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Honey")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Quest")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Battle")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Ability")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Goo")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Sunflower")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Dandelion")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Mushroom")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Blue Flower")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Clover")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Spider")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Bamboo")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Strawberry")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pineapple")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pumpkin")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Cactus")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Rose")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Pine Tree")
+			game.ReplicatedStorage.Events.BadgeEvent:FireServer("Collect", "Stump")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Glue Dispenser")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Free Royal Jelly Dispenser")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Blueberry Dispenser")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Strawberry Dispenser")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Treat Dispenser")
+			game.ReplicatedStorage.Events.ToyEvent:FireServer("Wealth Clock")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Brown Bear")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Polar Bear")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Honey Bee")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Black Bear")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Bucko Bee")
+			game.ReplicatedStorage.Events.CompleteQuestFromPool:FireServer("Riley Bee")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Brown Bear")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Polar Bear")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Honey Bee")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Black Bear")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Bucko Bee")
+			game.ReplicatedStorage.Events.GiveQuestFromPool:FireServer("Riley Bee")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Treat Tutorial")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Treat Tutorial")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bonding With Bees")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bonding With Bees")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For A Sunflower Seed")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For A Sunflower Seed")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Gist Of Jellies")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Gist Of Jellies")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For Strawberries")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For Strawberries")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Binging On Blueberries")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Binging On Blueberries")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Royal Jelly Jamboree")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Royal Jelly Jamboree")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For Sunflower Seeds")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For Sunflower Seeds")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Picking Out Pineapples")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Picking Out Pineapples")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Seven To Seven")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Seven To Seven")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mother Bears Midterm")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Mother Bears Midterm")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Eight To Eight")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Eight To Eight")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sights On The Stars")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Sights On The Stars")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Family Final")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Family Final")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Preliminary Research")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Preliminary Research")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Biology Study")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Biology Study")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Proving The Hypothesis")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Proving The Hypothesis")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bear Botany")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bear Botany")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Kingdom Collection")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Kingdom Collection")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Defensive Adaptions")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Devensive Adaptions")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Benefits Of Technology")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Benefits Of Technology")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Study")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Study")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Roses And Weeds")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Roses And Weeds")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Review")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Review")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ongoing Progress")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ongoing Progress")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red / Blue Duality")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Red / Blue Duality")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Costs Of Computation")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Costs Of Computation")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollination Practice")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollination Practice")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Optimizing Abilities")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Optimizing Abilities")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ready For Infrared")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ready For Infrared")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Breaking Down Badges")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Breaking Down Badges")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Subsidized Agriculture")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Subsidized Agriculture")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Meticulously Crafted")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Meticulously Crafted")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Smart, Not Hard")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Smart, Not Hard")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Limits of Language")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Limits of Language")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Patterns and Probability")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Patterns and Probability")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Chemical Analysis")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Chemical Analysis")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mark Mechanics")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Mark Mechanics")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Meditating On Phenomenon")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Meditating On Phenomenon")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beesperanto")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Beesperanto")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Hive Minded Bias")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Hive Minded Bias")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mushroom Measurement Monotony")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Mushroom Measurement Monotony")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Power Of Information")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Power Of Information")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Testing Teamwork")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Testing Teamwork")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Epistemological Endeavor")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Epistemological Endeavor")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Panda Bear")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Panda Bear")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Lesson On Ladybugs")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Lesson On Ladybugs")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhino Rumble")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhino Rumble")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beetle Battle")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Beetle Battle")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Slayer")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Slayer")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ladybug Bonker")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ladybug Bonker")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spider Slayer 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spider Slayer 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhino Wrecking")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhino Wrecking")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Final Showdown")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Final Showdown")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Werewolf Hunter")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Werewolf Hunter")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Skirmish with Scorpions")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Skirmish with Scorpions")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mantis Massacre")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Mantis Massacre")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The REAL Final Showdown")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The REAL Final Showdown")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ant Arrival")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ant Arrival")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Winged Wack Attack")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Winged Wack Attack")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Fire Fighter")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Fire Fighter")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Army Ant Assault")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Army Ant Assault")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colossal Combat")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Colossal Combat")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Eager Exterminator")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Eager Exterminator")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Leaper Lickin'")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Leaper Lickin'")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colossal Combat 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Colossal Combat 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Outrageous Onslaught")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Outrageous Onslaught")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Royal Rumble")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Royal Rumble")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 1")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 1")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 3")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 3")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 4")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 4")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Ultimate Ant Annihilation 5")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Ultimate Ant Annihilation 5")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 1")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 1")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 3")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 3")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 4")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 4")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Star Journey 5")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Star Journey 5")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Riley Bee")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Riley Bee")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Egg Hunt: Bucko Bee")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Egg Hunt: Bucko Bee")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sunflower Start")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Sunflower Start")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dandelion Deed")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Dandelion Deed")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red Request")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Red Request")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Into The Blue")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Into The Blue")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Variety Fetcher")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Variety Fetcher")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bamboo Boogie")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bamboo Boogie")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red Request 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Red Request 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Cobweb Sweeper")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Cobweb Sweeper")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Leisure Loot")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Leisure Loot")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("White Pollen Wrangler")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("White Pollen Wrangler")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pineapple Picking")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pineapple Picking")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Weed Wacker")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Weed Wacker")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Red + Blue = Gold")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Red + Blue = Gold")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colorless Collection")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Colorless Collection")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit of Springtime")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit of Springtime")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Weed Wacker 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Weed Wacker 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 3")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 3")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Lucky Landscaping")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Lucky Landscaping")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Azure Adventure")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Azure Adventure")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pink Pineapples")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pink Pineapples")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Mushrooms")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Mushrooms")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Cobweb Sweeper 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Cobweb Sweeper 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rojo-A-Go-Go")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rojo-A-Go-Go")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pumpkin Plower")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pumpkin Plower")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 4")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 4")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bouncing Around Biomes")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bouncing Around Biomes")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Pineapples")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Pineapples")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rose Request")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rose Request")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Search For The White Clover")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Search For The White Clover")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Stomping Grounds")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Stomping Grounds")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Collecting Cliffside")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Collecting Cliffside")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Mountain Meandering")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Mountain Meandering")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Quest Of Legends")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Quest Of Legends")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("High Altitude")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("High Altitude")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blissfully Blue")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Blissfully Blue")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rouge Round-up")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rouge Round-up")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("White As Snow")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("White As Snow")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Solo On The Stump")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Solo On The Stump")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Colorful Craving")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Colorful Craving")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pumpkins, Please!")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pumpkins, Please!")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Smorgasbord")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Smorgasbord")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollen Fetcher 5")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollen Fetcher 5")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("White Clover Redux")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("White Clover Redux")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Strawberry Field Forever")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Strawberry Field Forever")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Tasting The Sky")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Tasting The Sky")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Whispy and Crispy")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Whispy and Crispy")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Walk Through The Woods")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Walk Through The Woods")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Get Red-y")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Get Red-y")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("One Stop On The Tip Top")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("One Stop On The Tip Top")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Blue Mushrooms 2")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Blue Mushrooms 2")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pretty Pumpkins")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pretty Pumpkins")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Black Bear, Why?")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Black Bear, Why?")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bee A Star")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bee A Star")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit's Starter")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit's Starter")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The First Offering")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The First Offering")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rules of The Road")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rules of The Road")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("QR Quest")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("QR Quest")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pleasant Pastimes")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pleasant Pastimes")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Nature's Lessons")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Nature's Lessons")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Gifts Of Life")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Gifts Of Life")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Out-Questing Questions")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Out-Questing Questions")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Forcefully Friendly")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Forcefully Friendly")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Sway Away")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Sway Away")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Memories of Memories")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Memories of Memories")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beans Becoming")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Beans Becoming")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Do You Bee-lieve In Magic?")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Do You Bee-lieve In Magic?")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Ways Of The Winds / The Wind And Its Way")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Ways Of The Winds / The Wind And Its Way")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beauty Duty")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Beauty Duty")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Witness Grandeur")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Witness Grandeur")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Beeternity")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Beeternity")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("A Breath Of Blue")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("A Breath Of Blue")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Glory Of Goo")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Glory Of Goo")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Tickle The Wind")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Tickle The Wind")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Rhubarb That Could Have Been")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Rhubarb That Could Have Been")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dreams Of Being A Bee")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Dreams Of Being A Bee")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("The Sky Over The Stump")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("The Sky Over The Stump")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Space Oblivion")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Space Oblivion")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Pollenpalooza")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Pollenpalooza")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Dancing With Stick Bug")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Dancing With Stick Bug")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bug Busser")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bug Busser")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bombs, Blueberries, and Bean Bugs")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bombs, Blueberries, and Bean Bugs")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bugs And Boosts")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bugs And Boosts")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Make It Hasty")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Make It Hasty")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Total Focus")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Total Focus")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("On Your Marks")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("On Your Marks")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Look In The Leaves")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Look In The Leaves")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("What About Sprouts")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("What About Sprouts")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bean Bug Beatdown")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bean Bug Beatdown")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Bear Without Despair")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Bear Without Despair")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spirit Spree")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spirit Spree")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Echoing Call")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Echoing Call")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Spring Out Of The Mountain")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Spring Out Of The Mountain")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Goo")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Goo")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Medley")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Medley")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Mushrooms")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Mushrooms")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Picnic")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Picnic")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Pollen")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Pollen")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Rampage")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Rampage")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Roses")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Roses")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Scavenge")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Scavenge")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Skirmish")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Skirmish")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Strawberries")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Strawberries")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Tango")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Tango")
+			game.ReplicatedStorage.Events.GiveQuest:FireServer("Riley Bee: Tour")
+			game.ReplicatedStorage.Events.CompleteQuest:FireServer("Riley Bee: Tour")
+		until not act5
+	end
 end)
 
 Killstumnail.MouseButton1Down:connect(function()
-if afksnail == false then 
-afksnail = true 
-Killstumnail.BackgroundColor3 = red 
-MainPage.Visible = false 
-Close.Text ="+"
-local test = "C"
-local tweenservice = game:GetService("TweenService")
-local plr = game.Players.LocalPlayer
-local info = TweenInfo.new(0.1) -- change to how long it takes to get to the item (in seconds)
-local item = {}
-while afksnail do
-wait(1)    
-for _,v in pairs(game.workspace:GetDescendants()) do
-if string.find(v.Name,"LeafBurst") then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame * CFrame.new(0,0,0)
-end
-end
-for k,v in pairs(workspace.Collectibles:GetChildren()) do
- if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == test then
-						if (v.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
-item.CFrame = CFrame.new(v.Position.x,plr.Character.HumanoidRootPart.Position.y,v.Position.z)
-local Tween = tweenservice:Create(plr.Character.HumanoidRootPart, info, item)
-Tween:Play()
-end
-end
-end
-end
-else 
-afksnail = false 
-Killstumnail.BackgroundColor3 = blue 
-end
+	if afksnail == false then 
+		afksnail = true 
+		Killstumnail.BackgroundColor3 = red 
+		MainPage.Visible = false 
+		Close.Text ="+"
+		local test = "C"
+		local tweenservice = game:GetService("TweenService")
+		local plr = game.Players.LocalPlayer
+		local info = TweenInfo.new(0.1) -- change to how long it takes to get to the item (in seconds)
+		local item = {}
+		while afksnail do
+			wait(1)    
+			for _,v in pairs(game.workspace:GetDescendants()) do
+				if string.find(v.Name,"LeafBurst") then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame * CFrame.new(0,0,0)
+				end
+			end
+			for k,v in pairs(workspace.Collectibles:GetChildren()) do
+				if tostring(v) == tostring(game.Players.LocalPlayer.Name) or tostring(v) == test then
+					if (v.Position-plr.Character.HumanoidRootPart.Position).magnitude <= 60 then
+						item.CFrame = CFrame.new(v.Position.x,plr.Character.HumanoidRootPart.Position.y,v.Position.z)
+						local Tween = tweenservice:Create(plr.Character.HumanoidRootPart, info, item)
+						Tween:Play()
+					end
+				end
+			end
+		end
+	else 
+		afksnail = false 
+		Killstumnail.BackgroundColor3 = blue 
+	end
 end)
