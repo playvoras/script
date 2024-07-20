@@ -2436,7 +2436,7 @@ Autodig.MouseButton1Down:connect(function()
 		AutoDig = true 
 		Autodig.BackgroundColor3 = red
 		while AutoDig do
-			wait(0.5)
+			task.wait(0.5)
 
 			for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
 				if v:IsA("Tool") then 
