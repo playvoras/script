@@ -2440,7 +2440,7 @@ Autodig.MouseButton1Down:connect(function()
 
 			for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
 				if v:IsA("Tool") then 
-					v.ClickEvent:FireServer()
+					game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ToolCollect"):FireServer()
 
 				end
 			end
